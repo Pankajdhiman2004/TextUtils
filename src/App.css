@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  border: 1px solid #dee2e6;
+}
+
+.text-box {
+  min-height: 240px;
+  position: relative;
+}
+
+.text-box label {
+  border-radius: 10px;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  padding: 0 10px;
+}
+
+.text-box label.active {
+  left: 10px;
+  top: -12px;
+}
+
+.text-box #textbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.text-box #textbox:focus {
+  border: 1px solid #ced4da;
+  outline: none;
+  box-shadow: none;
+}
